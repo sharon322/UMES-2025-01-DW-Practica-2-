@@ -15,7 +15,7 @@
         <h1>Restaurante Sapore d'Italia</h1>
         <h2>Menú</h2>
         <nav>
-            <ul>
+            <ul class="menu">
                 <li><a href="/menu/postres.html">Postres</a></li>
                 <li><a href="/menu/platos-fuertes.html">Platos Fuertes</a></li>
                 <li><a href="/personal/personal.html">Personal</a></li>
@@ -29,17 +29,17 @@
         <section id="inicio">
             <h2>Misión</h2>
             <p>Sapore d'Italia es un restaurante que se especializa en la comida italiana, 
-                creando platos innovadores y deliciosos con los mas altos estándares de calidad.
+                creando platos innovadores y deliciosos con los más altos estándares de calidad.
                 El compromiso principal de Sapore d'Italia es la satisfacción de las necesidades,
                 expectativas y deseos de los clientes al ofrecerles un menú caracterizado por su variedad, 
                 sabor inigualable y excelente servicio.
             </p>
             <h2>Visión</h2>
             <p>Nuestro restaurante Sapore d'Italia se perfila en los próximos años como uno
-                de los restaurantes mas conocidos de la ciudad, tanto como por el sabor y calidad 
+                de los restaurantes más conocidos de la ciudad, tanto por el sabor y calidad 
                 de nuestros platos como por el excelente servicio prestado por el personal 
                 y el alto grado de satisfacción de nuestros clientes. De esta manera nuestra empresa 
-                lograra maximizar sus niveles de rentabilidad, proporcionando grandes oportunidades 
+                logrará maximizar sus niveles de rentabilidad, proporcionando grandes oportunidades 
             </p>
             <h2>Galería</h2>
             <figure>
@@ -66,6 +66,9 @@
     <script>
         let contenidoInicial = document.getElementById('contenido').innerHTML;
 
+        function mostrarInicio() {
+            document.getElementById('contenido').innerHTML = contenidoInicial;
+        }
     </script>
 </body>
 </html>

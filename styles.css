@@ -1,0 +1,86 @@
+/* styles.css */
+
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #2c3e50; /* Color de fondo oscuro */
+    color: #ecf0f1; /* Color de texto claro */
+    text-align: center;
+    padding: 40px 0;
+}
+
+h1 {
+    font-size: 2.5em; /* Tamaño de fuente grande para el título */
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.5em; /* Tamaño de fuente mediano para el subtítulo */
+    margin: 10px 0 20px;
+}
+
+nav {
+    background-color: #ecf0f1; /* Color de fondo claro para el menú */
+}
+
+.menu {
+    list-style-type: none; /* Eliminar los puntos de la lista */
+    padding: 0;
+}
+
+.menu li {
+    display: inline; /* Mostrar los elementos en línea */
+    margin: 0 15px; /* Espaciado entre elementos */
+}
+
+.menu a {
+    text-decoration: none; /* Eliminar el subrayado */
+    color: #2980b9; /* Color de enlace */
+    font-weight: bold; /* Negrita para los enlaces */
+    transition: color 0.3s; /* Transición suave para el hover */
+}
+
+.menu a:hover {
+    color: #3498db; /* Color al pasar el mouse */
+}
+
+main {
+    padding: 20px;
+}
+
+figure {
+    margin: 20px 0;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #2c3e50; /* Color de fondo oscuro */
+    color: #ecf0f1; /* Color de texto claro */
+    position: relative; /* Posición relativa para centrar el footer */
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Queries */
+@media (max-width: 700px) {
+    h1 {
+        font-size: 2em; /* Ajustar el tamaño del título en pantallas pequeñas */
+    }
+
+    h2 {
+        font-size: 1.2em; /* Ajustar el tamaño del subtítulo */
+    }
+
+    .menu li {
+        margin: 0 10px; /* Reducir espacio en pantallas pequeñas */
+    }
+}
