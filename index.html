@@ -10,12 +10,14 @@
     <title>Restaurante Sapore d'Italia</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header>
-        <h1>Restaurante Sapore d'Italia</h1>
-        <h2>Menú</h2>
+<body class="fondo">
+    <header class="container">
+        <div class="logo-title">
+            <span class="title">Sapore d'Italia</span>
+        </div>
         <nav>
             <ul class="menu">
+                <li><a href="/index.html">Pagina principal</a></li>
                 <li><a href="/menu/postres.html">Postres</a></li>
                 <li><a href="/menu/platos-fuertes.html">Platos Fuertes</a></li>
                 <li><a href="/personal/personal.html">Personal</a></li>
@@ -25,50 +27,45 @@
             </ul>
         </nav>
     </header>
-    <main id="contenido">
+    <main id="contenido" class="content">
         <section id="inicio">
             <h2>Misión</h2>
             <p>Sapore d'Italia es un restaurante que se especializa en la comida italiana, 
                 creando platos innovadores y deliciosos con los más altos estándares de calidad.
                 El compromiso principal de Sapore d'Italia es la satisfacción de las necesidades,
                 expectativas y deseos de los clientes al ofrecerles un menú caracterizado por su variedad, 
-                sabor inigualable y excelente servicio.
-            </p>
+                sabor inigualable y excelente servicio..</p>
+            
             <h2>Visión</h2>
             <p>Nuestro restaurante Sapore d'Italia se perfila en los próximos años como uno
                 de los restaurantes más conocidos de la ciudad, tanto por el sabor y calidad 
                 de nuestros platos como por el excelente servicio prestado por el personal 
                 y el alto grado de satisfacción de nuestros clientes. De esta manera nuestra empresa 
-                logrará maximizar sus niveles de rentabilidad, proporcionando grandes oportunidades 
-            </p>
+                logrará maximizar sus niveles de rentabilidad, proporcionando grandes oportunidades </p>
+            
             <h2>Galería</h2>
-            <figure>
-                <img src="/Imagenes/e93fb1552b00242d70ad153b9b2d2da2.jpg" alt="Restaurante interior" title="Interior del Restaurante" style="width: 600px; height: 400px;">
-                <figcaption>Ambiente acogedor y elegante</figcaption>
-            </figure>
-            <figure>
-                <img src="/Imagenes/2.jpg" alt="Plato especial" title="Plato Especial" style="width: 600px; height: 400px;">
-                <figcaption>Uno de nuestros platos más solicitados.</figcaption>
-            </figure>
-            <figure>
-                <img src="/Imagenes/3.avif" alt="Chef preparando comida" title="Nuestro Chef en acción" style="width: 600px; height: 400px;">
-                <figcaption>Elaboramos cada plato con pasión.</figcaption>
-            </figure>
-            <figure>
-                <img src="/Imagenes/4.avif" alt="Postres Sapore d'Italia" title="Deliciosos Postres" style="width: 600px; height: 400px;">
-                <figcaption>Disfruta de nuestros exquisitos postres.</figcaption>
-            </figure>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="/Imagenes/e93fb1552b00242d70ad153b9b2d2da2.jpg" alt="Restaurante interior">
+                    <p>Ambiente acogedor y elegante</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="/Imagenes/2.jpg" alt="Plato especial">
+                    <p>Uno de nuestros platos más solicitados</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="/Imagenes/3.avif" alt="Chef preparando comida">
+                    <p>Elaboramos cada plato con pasión</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="/Imagenes/4.avif" alt="Postres Sapore d'Italia">
+                    <p>Disfruta de nuestros exquisitos postres</p>
+                </div>
+            </div>
         </section>
     </main>
-    <footer>
-        <p><a href="#" onclick="mostrarInicio()">Volver al inicio</a></p>
+    <footer class="blanco">
+        <p>RESTAURANTE SHARON</p>  
     </footer>
-    <script>
-        let contenidoInicial = document.getElementById('contenido').innerHTML;
-
-        function mostrarInicio() {
-            document.getElementById('contenido').innerHTML = contenidoInicial;
-        }
-    </script>
 </body>
 </html>
